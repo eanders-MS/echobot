@@ -20,6 +20,7 @@ bot.add('/', function (session) {
         channelMessageId: session.message.channelMessageId,
         participants: session.message.participants,
         totalParticipants: session.message.totalParticipants,
+        text: "I send you sticker.",
         channelData:
         {
             "method": "sendSticker",
