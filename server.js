@@ -10,11 +10,6 @@ var botConnectorOptions = {
 // Create bot
 var bot = new builder.BotConnectorBot(botConnectorOptions);
 bot.add('/', function (session) {
-
-    //respond with user's message
-    session.send("You said " + session.message.text);
-});
-bot.add('/channeldata', function(session) {
     session.send({
         type: "Message",
         to: session.message.from,
