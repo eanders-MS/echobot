@@ -10,30 +10,9 @@ var botConnectorOptions = {
 // Create bot
 var bot = new builder.BotConnectorBot(botConnectorOptions);
 bot.add('/', function (session) {
-    session.send({
-        type: "Message",
-        to: session.message.from,
-        from: session.message.to,
-        replyToMessageId: session.message.id,
-        conversationId: session.message.conversationId,
-        channelConversationId: session.message.channelConversationId,
-        channelMessageId: session.message.channelMessageId,
-        participants: session.message.participants,
-        totalParticipants: session.message.totalParticipants,
-        text: "I send you sticker.",
-        channelData:
-        {
-            "method": "sendSticker",
-            "parameters":
-            {
-                "sticker":
-                {
-                    "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/LittleCarron.gif",
-                    "mediaType": "image/gif"
-                }
-            }
-        }
-    });
+    session.send("1");
+    session.send("2");
+    session.send("3");
 });
 
 // Setup Restify Server
