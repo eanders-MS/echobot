@@ -6,7 +6,7 @@ var botConnectorOptions = {
     appId: process.env.BOTFRAMEWORK_APPID,
     appSecret: process.env.BOTFRAMEWORK_APPSECRET,
     minSendDelay: 0,
-    endpoint: "https://4147c91c.ngrok.io"
+    endpoint: "https://d28295c7.ngrok.io"
 };
 
 // Create bot
