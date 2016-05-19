@@ -4,7 +4,8 @@ var builder = require('botbuilder');
 // Get secrets from server environment
 var botConnectorOptions = {
     appId: process.env.BOTFRAMEWORK_APPID,
-    appSecret: process.env.BOTFRAMEWORK_APPSECRET
+    appSecret: process.env.BOTFRAMEWORK_APPSECRET,
+    minSendDelay: 10
 };
 
 // Create bot
