@@ -5,15 +5,19 @@ var builder = require('botbuilder');
 var botConnectorOptions = {
     appId: process.env.BOTFRAMEWORK_APPID,
     appSecret: process.env.BOTFRAMEWORK_APPSECRET,
-    minSendDelay: 0
+    minSendDelay: 0,
+    endpoint: "https://d15599c6.ngrok.io"
 };
 
 // Create bot
 var bot = new builder.BotConnectorBot(botConnectorOptions);
 bot.add('/', function (session) {
     session.send("1");
+    console.log("sent 1");
     session.send("2");
+    console.log("sent 2");
     session.send("3");
+    console.log("sent 3");
 });
 
 // Setup Restify Server
