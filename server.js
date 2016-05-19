@@ -5,7 +5,7 @@ var builder = require('botbuilder');
 var botConnectorOptions = {
     appId: process.env.BOTFRAMEWORK_APPID,
     appSecret: process.env.BOTFRAMEWORK_APPSECRET,
-    minSendDelay: 10
+    minSendDelay: 1
 };
 
 // Create bot
