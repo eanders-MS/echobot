@@ -9,14 +9,14 @@ var botConnectorOptions = {
 
 // Create bot
 var bot = new builder.BotConnectorBot(botConnectorOptions);
-bot.add('/', function (session) {
-    session.send("1");
-    console.log("sent 1");
-    session.send("2");
-    console.log("sent 2");
-    session.send("3");
-    console.log("sent 3");
-});
+bot.add('/', [
+    function (session) {
+        builder.Prompts.choice(session, "Which color?", "red|green|blue");
+    },
+    function (session, results) {
+        session.send("good choice!");
+    }
+]);
 
 // Setup Restify Server
 var server = restify.createServer();
