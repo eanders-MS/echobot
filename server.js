@@ -80,6 +80,12 @@ bot.add('/', [
                 }
             });
         }
+        else if (session.message.text.startsWith('send link')) {
+            session.send(
+                "[This is a link](http://www.microsoft.com)\n\n" +
+                "[Long link](https://login.microsoftonline.com/common/oauth2/v2.0/authorize?response_type=code&client_id=d9c54d46-cc60-4374-b3a4-9f42a291bbd9&client_secret=g4Np8Bsnd4Z3rvJe8FFyXUA&redirect_uri=https%3a%2f%2fsampleonedrivebot.azurewebsites.net%2fapi%2fOAuthCallback&scope=openid+profile+Files.Read&state=H4sIAAAAAAAEAHWMTQuCQBRFB3dFu6DfkToz4dJvJKIgW4c1zxR1RmYsqD_etpfSst3lnnPvmxBi3Q3oTJAFZs5pFz6buM-3U-8LocEYMkdoM-46lHmbCYVVISW0uJwhHKCFmy46Yl3UgN0Ku2PR9S3sJUS6fkCgBttx6Sj8bpdoKQniy81on5GOyr_7q5IP0KYYaiURrhGyKPNLFYTPTXNiO_CaODFA9YWlHRVXJxdRwtPTKygrj7cHXHwAs2k7YfcAAAA1)"
+                );
+        }
         else if (session.message.text.startsWith('dump message')) {
             session.send(`\`\`\`\n${JSON.stringify(session.message, null, '\t')}\`\`\``);
         }
@@ -92,27 +98,33 @@ bot.add('/', [
                         {
                             type: "photo",
                             id: "1",
-                            title: "Misty Castle",
-                            photo_url: "http://www.mrwallpaper.com/wallpapers/misty-castle.jpg",
-                            thumb_url: "http://www.mrwallpaper.com/wallpapers/misty-castle.jpg"
+                            title: "Rabbit",
+                            photo_url: "http://cdn.kickvick.com/wp-content/uploads/2015/09/cutest-bunny-rabbits-01.jpg",
+                            thumb_url: "http://cdn.kickvick.com/wp-content/uploads/2015/09/cutest-bunny-rabbits-01.jpg"
                         },
                         {
                             type: "photo",
                             id:"2",
-                            title: "Stonehenge",
-                            photo_url: "http://www.mrwallpaper.com/wallpapers/stonehenge.jpg",
-                            thumb_url: "http://www.mrwallpaper.com/wallpapers/stonehenge.jpg"
+                            title: "Bird",
+                            photo_url: "http://data.whicdn.com/images/48243885/large.jpg",
+                            thumb_url: "http://data.whicdn.com/images/48243885/large.jpg"
                         },
                         {
                             type: "photo",
                             id: "3",
-                            title: "Dragon",
-                            photo_url: "http://www.mrwallpaper.com/wallpapers/dragon-art-1920x1200.jpg",
-                            thumb_url: "http://www.mrwallpaper.com/wallpapers/dragon-art-1920x1200.jpg"
+                            title: "WTF?",
+                            photo_url: "https://c1.staticflickr.com/7/6136/6041802514_8328b6ea6d_b.jpg",
+                            thumb_url: "https://c1.staticflickr.com/7/6136/6041802514_8328b6ea6d_b.jpg"
                         }
                     ])
                 }
             });
+        }
+        else if (session.message.text.includes("async")) {
+            session.send("this is synchronous");
+            session.send("this is asynchronous1");
+            session.send("this is asynchronous2");
+            session.send("this is asynchronous3");
         }
         else if (session.message.text) {
             session.send(`You said: ${session.message.text}`);
@@ -135,6 +147,6 @@ server.get(/.*/, restify.serveStatic({
 	'default': 'index.html'
 }));
 
-server.listen(process.env.port || 3074, function () {
+server.listen(process.env.port || 2134, function () {
     console.log('%s listening to %s', server.name, server.url);
 });

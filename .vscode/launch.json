@@ -16,8 +16,8 @@
             ],
             "env": {
                 "NODE_ENV": "development",
-                "BOTFRAMEWORK_APPID": "eanders-echobot",
-                "BOTFRAMEWORK_APPSECRET": "acdf4c94d9ac4629a31c38bddf9c87c1"
+                "BOTFRAMEWORK_APPID": "eanders-bot",
+                "BOTFRAMEWORK_APPSECRET": "0ad05b4aa0d64ab1ad43711132ff444c"
             },
             "externalConsole": false,
             "sourceMaps": false,
