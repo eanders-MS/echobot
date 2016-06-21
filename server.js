@@ -90,35 +90,43 @@ bot.add('/', [
             session.send(`\`\`\`\n${JSON.stringify(session.message, null, '\t')}\`\`\``);
         }
         else if (session.message.channelData && session.message.channelData.inline_query) {
-            session.sendMessage( {
-                method: "answerInlineQuery",
-                parameters: {
+            var reply = {
+                method:"answerInlineQuery",
+                parameters:{
                     inline_query_id: session.message.channelData.inline_query.id,
-                    results: JSON.stringify([
+                    results:JSON.stringify([
                         {
-                            type: "photo",
-                            id: "1",
-                            title: "Rabbit",
-                            photo_url: "http://cdn.kickvick.com/wp-content/uploads/2015/09/cutest-bunny-rabbits-01.jpg",
-                            thumb_url: "http://cdn.kickvick.com/wp-content/uploads/2015/09/cutest-bunny-rabbits-01.jpg"
+                            type:"photo",
+                            id:"1e515976-f9b1-4f35-ada0-b93c71ca3a5d",
+                            title:"response from the_memebot",
+                            photo_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://nick.mtvnimages.com/nick/video/images/spongebob-squarepants/spongebob-squarepants-179-full-episode-4x3.jpg?quality=0.51&maxdimension=600",
+                            thumb_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://nick.mtvnimages.com/nick/video/images/spongebob-squarepants/spongebob-squarepants-179-full-episode-4x3.jpg?quality=0.51&maxdimension=600"
                         },
                         {
-                            type: "photo",
-                            id:"2",
-                            title: "Bird",
-                            photo_url: "http://data.whicdn.com/images/48243885/large.jpg",
-                            thumb_url: "http://data.whicdn.com/images/48243885/large.jpg"
+                            type:"photo",
+                            id:"f09b914b-2597-4672-bf39-4212d3325042",
+                            title:"response from the_memebot",
+                            photo_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://www.shescribes.com/wp-content/uploads/2014/12/Spongebob_Squarepants_005.jpg",
+                            thumb_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://www.shescribes.com/wp-content/uploads/2014/12/Spongebob_Squarepants_005.jpg"
                         },
                         {
-                            type: "photo",
-                            id: "3",
-                            title: "WTF?",
-                            photo_url: "https://c1.staticflickr.com/7/6136/6041802514_8328b6ea6d_b.jpg",
-                            thumb_url: "https://c1.staticflickr.com/7/6136/6041802514_8328b6ea6d_b.jpg"
+                            type:"photo",
+                            id:"82ce0831-fce0-4678-bacb-51025ead2998",
+                            title:"response from the_memebot",
+                            photo_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://www.nick.com/spongebob-squarepants/games/",
+                            thumb_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://www.nick.com/spongebob-squarepants/games/"
+                        },
+                        {
+                            type:"photo",
+                            id:"ca25bfd6-05c2-4a25-b9a5-a8b54c8f274e",
+                            title:"response from the_memebot",
+                            photo_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://ia.media-imdb.com/images/M/MV5BMTU3NDgzMzgzNF5BMl5BanBnXkFtZTcwMDgyNjc2MQ@@._V1_CR0,30,250,141_AL_UX477_CR0,0,477,268_AL_.jpg",
+                            thumb_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://ia.media-imdb.com/images/M/MV5BMTU3NDgzMzgzNF5BMl5BanBnXkFtZTcwMDgyNjc2MQ@@._V1_CR0,30,250,141_AL_UX477_CR0,0,477,268_AL_.jpg"
                         }
                     ])
                 }
-            });
+            };
+            session.sendMessage(reply);
         }
         else if (session.message.text.includes("async")) {
             session.send("this is synchronous");
@@ -150,3 +158,5 @@ server.get(/.*/, restify.serveStatic({
 server.listen(process.env.port || 2134, function () {
     console.log('%s listening to %s', server.name, server.url);
 });
+
+
