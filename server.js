@@ -98,26 +98,26 @@ bot.add('/', [
                         {
                             type:"photo",
                             id:"1",
-                            photo_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://nick.mtvnimages.com/nick/video/images/spongebob-squarepants/spongebob-squarepants-179-full-episode-4x3.jpg?quality=0.51&maxdimension=600",
-                            thumb_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://nick.mtvnimages.com/nick/video/images/spongebob-squarepants/spongebob-squarepants-179-full-episode-4x3.jpg?quality=0.51&maxdimension=600"
+                            photo_url:"http://nick.mtvnimages.com/nick/video/images/spongebob-squarepants/spongebob-squarepants-179-full-episode-4x3.jpg?quality=0.51&maxdimension=600",
+                            thumb_url:"http://nick.mtvnimages.com/nick/video/images/spongebob-squarepants/spongebob-squarepants-179-full-episode-4x3.jpg?quality=0.51&maxdimension=600"
                         },
                         {
                             type:"photo",
                             id:"2",
-                            photo_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://www.shescribes.com/wp-content/uploads/2014/12/Spongebob_Squarepants_005.jpg",
-                            thumb_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://www.shescribes.com/wp-content/uploads/2014/12/Spongebob_Squarepants_005.jpg"
+                            photo_url:"http://www.shescribes.com/wp-content/uploads/2014/12/Spongebob_Squarepants_005.jpg",
+                            thumb_url:"http://www.shescribes.com/wp-content/uploads/2014/12/Spongebob_Squarepants_005.jpg"
                         },
                         {
                             type:"photo",
                             id:"3",
-                            photo_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://www.nick.com/spongebob-squarepants/games/",
-                            thumb_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://www.nick.com/spongebob-squarepants/games/"
+                            photo_url:"http://www.nick.com/spongebob-squarepants/games/",
+                            thumb_url:"http://www.nick.com/spongebob-squarepants/games/"
                         },
                         {
                             type:"photo",
                             id:"4",
-                            photo_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://ia.media-imdb.com/images/M/MV5BMTU3NDgzMzgzNF5BMl5BanBnXkFtZTcwMDgyNjc2MQ@@._V1_CR0,30,250,141_AL_UX477_CR0,0,477,268_AL_.jpg",
-                            thumb_url:"http://memegen.link/custom/nobody/cares.jpg?alt=http://ia.media-imdb.com/images/M/MV5BMTU3NDgzMzgzNF5BMl5BanBnXkFtZTcwMDgyNjc2MQ@@._V1_CR0,30,250,141_AL_UX477_CR0,0,477,268_AL_.jpg"
+                            photo_url:"http://ia.media-imdb.com/images/M/MV5BMTU3NDgzMzgzNF5BMl5BanBnXkFtZTcwMDgyNjc2MQ@@._V1_CR0,30,250,141_AL_UX477_CR0,0,477,268_AL_.jpg",
+                            thumb_url:"http://ia.media-imdb.com/images/M/MV5BMTU3NDgzMzgzNF5BMl5BanBnXkFtZTcwMDgyNjc2MQ@@._V1_CR0,30,250,141_AL_UX477_CR0,0,477,268_AL_.jpg"
                         }
                     ])
                 }
