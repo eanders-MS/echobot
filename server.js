@@ -45,7 +45,7 @@ bot.add('/', [
                     "parameters": {
                         "sticker":
                         {
-                            "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/LittleCarron.gif",
+                            "url": "https://67.media.tumblr.com/9f0cd010f94af9d679db6a98a9d8e28d/tumblr_nm2o71CWsa1tq4of6o1_400.gif",
                             "mediaType": "image/gif"
                         }
                     }
