@@ -27,7 +27,7 @@ bot.add('/', [
                 }
             });
         }
-        else if (session.message.text.startsWith('sticker as doc')) {
+        else if (session.message.text.startsWith('gif doc')) {
             session.sendMessage({
                 method: "sendDocument",
                 parameters: {
