@@ -38,6 +38,20 @@ bot.add('/', [
                 }
             });
         }
+        else if (session.message.text.startsWith('alt send sticker')) {
+            session.send({
+                channelData: {
+                    "method": "sendSticker",
+                    "parameters": {
+                        "sticker":
+                        {
+                            "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/LittleCarron.gif",
+                            "mediaType": "image/gif"
+                        }
+                    }
+                }
+            });
+        }
         else if (session.message.text.startsWith('send multiple')) {
             session.sendMessage(
                 [
