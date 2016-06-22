@@ -27,6 +27,16 @@ bot.add('/', [
                 }
             });
         }
+        else if (session.message.text.startsWith('sticker as doc')) {
+            session.sendMessage({
+                method: "sendDocument",
+                parameters: {
+                    document: {
+                        url: "https://upload.wikimedia.org/wikipedia/commons/3/33/LittleCarron.gif"
+                    }
+                }
+            });
+        }
         else if (session.message.text.startsWith('send sticker')) {
             session.sendMessage({
                 method: "sendSticker",
