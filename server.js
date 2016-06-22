@@ -52,6 +52,20 @@ bot.add('/', [
                 }
             });
         }
+        else if (session.message.text.startsWith('send webp')) {
+            session.send({
+                channelData: {
+                    "method": "sendSticker",
+                    "parameters": {
+                        "sticker":
+                        {
+                            "url": "https://kodu.blob.core.windows.net:443/media/tumblr_nm2o71CWsa1tq4of6o1_400.webp",
+                            "mediaType": "image/webp"
+                        }
+                    }
+                }
+            });
+        }
         else if (session.message.text.startsWith('send multiple')) {
             session.sendMessage(
                 [
