@@ -168,6 +168,10 @@ bot.add('/', [
             session.send("this is asynchronous2");
             session.send("this is asynchronous3");
         }
+        else if (session.message.text.startsWith("send prompt"))
+        {
+            builder.Prompts.choice(session, "Which color?", ["red","green","blue"]);
+        }
         else if (session.message.text) {
             session.send(`You said: ${session.message.text}`);
         }
