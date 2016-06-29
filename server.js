@@ -134,28 +134,32 @@ bot.add('/', [
                     inline_query_id: session.message.channelData.inline_query.id,
                     results:JSON.stringify([
                         {
-                            type:"photo",
-                            id:"1",
-                            photo_url:"http://nick.mtvnimages.com/nick/video/images/spongebob-squarepants/spongebob-squarepants-179-full-episode-4x3.jpg?quality=0.51&maxdimension=600",
-                            thumb_url:"http://nick.mtvnimages.com/nick/video/images/spongebob-squarepants/spongebob-squarepants-179-full-episode-4x3.jpg?quality=0.51&maxdimension=600"
+                            "type":"photo",
+                            "id":"86c7683a-c2aa-4700-b96e-b0b81197ed3a",
+                            "title":"response from the_memebot",
+                            "photo_url":"https://memebotstorage.blob.core.windows.net/savedmemes/e81b2f60-4f1f-4a59-8661-250d81cd4f10.png",
+                            "thumb_url":"https://memebotstorage.blob.core.windows.net/savedmemes/e81b2f60-4f1f-4a59-8661-250d81cd4f10.png"
                         },
                         {
-                            type:"photo",
-                            id:"2",
-                            photo_url:"http://www.shescribes.com/wp-content/uploads/2014/12/Spongebob_Squarepants_005.jpg",
-                            thumb_url:"http://www.shescribes.com/wp-content/uploads/2014/12/Spongebob_Squarepants_005.jpg"
+                            "type":"photo",
+                            "id":"3179b9fa-a45d-4644-8e90-da7f17a703f4",
+                            "title":"response from the_memebot",
+                            "photo_url":"https://memebotstorage.blob.core.windows.net/savedmemes/5c04de79-7ed2-49c1-ac97-8f1fd5449096.png",
+                            "thumb_url":"https://memebotstorage.blob.core.windows.net/savedmemes/5c04de79-7ed2-49c1-ac97-8f1fd5449096.png"
                         },
                         {
-                            type:"photo",
-                            id:"3",
-                            photo_url:"http://www.nick.com/spongebob-squarepants/games/",
-                            thumb_url:"http://www.nick.com/spongebob-squarepants/games/"
+                            "type":"photo",
+                            "id":"86ac1d74-b2e5-4cc5-85e1-d053db19aa9d",
+                            "title":"response from the_memebot",
+                            "photo_url":"https://memebotstorage.blob.core.windows.net/savedmemes/2330f9a3-0ca3-4388-a7aa-d798b1c86f19.png",
+                            "thumb_url":"https://memebotstorage.blob.core.windows.net/savedmemes/2330f9a3-0ca3-4388-a7aa-d798b1c86f19.png"
                         },
                         {
-                            type:"photo",
-                            id:"4",
-                            photo_url:"http://ia.media-imdb.com/images/M/MV5BMTU3NDgzMzgzNF5BMl5BanBnXkFtZTcwMDgyNjc2MQ@@._V1_CR0,30,250,141_AL_UX477_CR0,0,477,268_AL_.jpg",
-                            thumb_url:"http://ia.media-imdb.com/images/M/MV5BMTU3NDgzMzgzNF5BMl5BanBnXkFtZTcwMDgyNjc2MQ@@._V1_CR0,30,250,141_AL_UX477_CR0,0,477,268_AL_.jpg"
+                            "type":"photo",
+                            "id":"32b74138-ec17-4d08-bdbb-927d6ea7d73a",
+                            "title":"response from the_memebot",
+                            "photo_url":"https://memebotstorage.blob.core.windows.net/savedmemes/47deef2b-6885-4520-9d36-7f0b777b85e5.png",
+                            "thumb_url":"https://memebotstorage.blob.core.windows.net/savedmemes/47deef2b-6885-4520-9d36-7f0b777b85e5.png"
                         }
                     ])
                 }
@@ -167,10 +171,6 @@ bot.add('/', [
             session.send("this is asynchronous1");
             session.send("this is asynchronous2");
             session.send("this is asynchronous3");
-        }
-        else if (session.message.text.startsWith("send prompt"))
-        {
-            builder.Prompts.choice(session, "Which color?", ["red","green","blue"]);
         }
         else if (session.message.text) {
             session.send(`You said: ${session.message.text}`);
