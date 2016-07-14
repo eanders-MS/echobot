@@ -127,6 +127,320 @@ bot.add('/', [
         else if (session.message.text.startsWith('dump message')) {
             session.send(`\`\`\`\n${JSON.stringify(session.message, null, '\t')}\`\`\``);
         }
+        else if (session.message.text.startsWith('send buttons')) {
+            session.sendMessage({
+                method: "sendMessage",
+                parameters: {
+                    text: "Which file do you want?",
+                    parse_mode: "Markdown",
+                    reply_markup: JSON.stringify(
+                    {
+                    "inline_keyboard": [
+                        [
+                        {
+                            "text": "Provisioning Azure Service Bus for federated authentication.docx",
+                            "callback_data": "Provisioning Azure Service Bus for federated authentication.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Response to Challenges for Developers Using the Office 365 APIs.docx",
+                            "callback_data": "Response to Challenges for Developers Using the Office 365 APIs.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "HTML and Silverlight.docx",
+                            "callback_data": "HTML and Silverlight.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "SLA Stories.pptx",
+                            "callback_data": "SLA Stories.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Windows 8 Commercial App Key Technologies-matwin8box.pptx",
+                            "callback_data": "Windows 8 Commercial App Key Technologies-matwin8box.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Microsoft Azure in the Enterprise With notes.pptx",
+                            "callback_data": "Microsoft Azure in the Enterprise With notes.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Identity for Devs.pptx",
+                            "callback_data": "Identity for Devs.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Passwords.one",
+                            "callback_data": "Passwords.one"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Enable Modern Business Applications.pptx",
+                            "callback_data": "Enable Modern Business Applications.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Enable Modern Business Applications-matwin8box.pptx",
+                            "callback_data": "Enable Modern Business Applications-matwin8box.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Client Development Strategies 2.pptx",
+                            "callback_data": "Client Development Strategies 2.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Microsoft Azure in the Enterprise.pptx",
+                            "callback_data": "Microsoft Azure in the Enterprise.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Microsoft Azure in the Enterprise - Mat Velloso.pptx",
+                            "callback_data": "Microsoft Azure in the Enterprise - Mat Velloso.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Azure - Security Privacy Compliance Deep Dive.pptx",
+                            "callback_data": "Azure - Security Privacy Compliance Deep Dive.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Fortify Architecture Assessment.docx",
+                            "callback_data": "Fortify Architecture Assessment.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Enable Modern Business Applications.pptx",
+                            "callback_data": "Enable Modern Business Applications.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "AMScan_Perf.pptx",
+                            "callback_data": "AMScan_Perf.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "old Shape - HTML advanced - Velloso.pptx",
+                            "callback_data": "old Shape - HTML advanced - Velloso.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Windows 8 Commercial App Overview Pitch Deck-matwin8box.pptx",
+                            "callback_data": "Windows 8 Commercial App Overview Pitch Deck-matwin8box.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Windows 8 Commercial App Overview Pitch Deck.pptx",
+                            "callback_data": "Windows 8 Commercial App Overview Pitch Deck.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Projects.one",
+                            "callback_data": "Projects.one"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Azure in Education.pptx",
+                            "callback_data": "Azure in Education.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Findings - Win 8 Metro application development.doc",
+                            "callback_data": "Findings - Win 8 Metro application development.doc"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "DoL Application Risk Assessment Draft  0 5.docx",
+                            "callback_data": "DoL Application Risk Assessment Draft  0 5.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "CORS and feature comparison.docx",
+                            "callback_data": "CORS and feature comparison.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Microsoft Azure in the Enterprise_April_17_2014.pptx",
+                            "callback_data": "Microsoft Azure in the Enterprise_April_17_2014.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "test",
+                            "callback_data": "test"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Findings - Win 8 Metro application development.doc",
+                            "callback_data": "Findings - Win 8 Metro application development.doc"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "LEAP 2015.pptx",
+                            "callback_data": "LEAP 2015.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Findings - Win 8 Metro application development.doc",
+                            "callback_data": "Findings - Win 8 Metro application development.doc"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Common Consent Dev Flow-Edward Wu-matwin8box.pptx",
+                            "callback_data": "Common Consent Dev Flow-Edward Wu-matwin8box.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Windows 8 Commercial App Key Technologies.pptx",
+                            "callback_data": "Windows 8 Commercial App Key Technologies.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Identity for Devs.pptx",
+                            "callback_data": "Identity for Devs.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "UI Mockup.pptx",
+                            "callback_data": "UI Mockup.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "TechDays Lessons Learned.pptx",
+                            "callback_data": "TechDays Lessons Learned.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Guidance and issues.pptx",
+                            "callback_data": "Guidance and issues.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Azure REST Design Guidelines v2.1.docx",
+                            "callback_data": "Azure REST Design Guidelines v2.1.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Approvals POC Final Findings.docx",
+                            "callback_data": "Approvals POC Final Findings.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "LEAP - BizTalk- Velloso.pptx",
+                            "callback_data": "LEAP - BizTalk- Velloso.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "HTML 5 or Silverlight, making a rational choice.docx",
+                            "callback_data": "HTML 5 or Silverlight, making a rational choice.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Provisioning Azure Service Bus for federated authentication-matwin8box.docx",
+                            "callback_data": "Provisioning Azure Service Bus for federated authentication-matwin8box.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Findings - Win 8 Metro application development.doc",
+                            "callback_data": "Findings - Win 8 Metro application development.doc"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Provisioning Azure Service Bus for federated authentication.docx",
+                            "callback_data": "Provisioning Azure Service Bus for federated authentication.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "HTML5 competition proposal.docx",
+                            "callback_data": "HTML5 competition proposal.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Windows 8 Enterprise App Presentation.pptx",
+                            "callback_data": "Windows 8 Enterprise App Presentation.pptx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Bring your own app POC.docx",
+                            "callback_data": "Bring your own app POC.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "DTM Architecture_v1_Final.docx",
+                            "callback_data": "DTM Architecture_v1_Final.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "Fortify Architecture Assessment.docx",
+                            "callback_data": "Fortify Architecture Assessment.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "OA 3.0 Web Services Versioning Strategy.docx",
+                            "callback_data": "OA 3.0 Web Services Versioning Strategy.docx"
+                        }
+                        ],
+                        [
+                        {
+                            "text": "DTM assessment.docx",
+                            "callback_data": "DTM assessment.docx"
+                        }
+                        ]
+                    ]
+                    }) // JSON.stringify
+                }
+            }) // session.sendMessage
+        }
         else if (session.message.channelData && session.message.channelData.inline_query) {
             var reply = {
                 method:"answerInlineQuery",
