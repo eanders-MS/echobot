@@ -158,13 +158,13 @@ bot.add('/', [
                         [
                         {
                             "text": "Provisioning Azure Service Bus for federated authentication.docx",
-                            "callback_data": "Provisioning Azure Service Bus for federated authentication.docx"
+                            "callback_data": "Pre Service Bus for federated authentication.docx"
                         }
                         ],
                         [
                         {
                             "text": "Response to Challenges for Developers Using the Office 365 APIs.docx",
-                            "callback_data": "Response to Challenges for Developers Using the Office 365 APIs.docx"
+                            "callback_data": "Rr Developers Using the Office 365 APIs.docx"
                         }
                         ],
                         [
@@ -182,7 +182,7 @@ bot.add('/', [
                         [
                         {
                             "text": "Windows 8 Commercial App Key Technologies-matwin8box.pptx",
-                            "callback_data": "Windows 8 Commercial App Key Technologies-matwin8box.pptx"
+                            "callback_data": "WApp Key Technologies-matwin8box.pptx"
                         }
                         ],
                         [
@@ -212,7 +212,7 @@ bot.add('/', [
                         [
                         {
                             "text": "Enable Modern Business Applications-matwin8box.pptx",
-                            "callback_data": "Enable Modern Business Applications-matwin8box.pptx"
+                            "callback_data": "Eness Applications-matwin8box.pptx"
                         }
                         ],
                         [
@@ -230,13 +230,13 @@ bot.add('/', [
                         [
                         {
                             "text": "Microsoft Azure in the Enterprise - Mat Velloso.pptx",
-                            "callback_data": "Microsoft Azure in the Enterprise - Mat Velloso.pptx"
+                            "callback_data": "Mhe Enterprise - Mat Velloso.pptx"
                         }
                         ],
                         [
                         {
                             "text": "Azure - Security Privacy Compliance Deep Dive.pptx",
-                            "callback_data": "Azure - Security Privacy Compliance Deep Dive.pptx"
+                            "callback_data": "Arivacy Compliance Deep Dive.pptx"
                         }
                         ],
                         [
@@ -266,7 +266,7 @@ bot.add('/', [
                         [
                         {
                             "text": "Windows 8 Commercial App Overview Pitch Deck-matwin8box.pptx",
-                            "callback_data": "Windows 8 Commercial App Overview Pitch Deck-matwin8box.pptx"
+                            "callback_data": "W App Overview Pitch Deck-matwin8box.pptx"
                         }
                         ],
                         [
@@ -290,13 +290,13 @@ bot.add('/', [
                         [
                         {
                             "text": "Findings - Win 8 Metro application development.doc",
-                            "callback_data": "Findings - Win 8 Metro application development.doc"
+                            "callback_data": "F8 Metro application development.doc"
                         }
                         ],
                         [
                         {
                             "text": "DoL Application Risk Assessment Draft  0 5.docx",
-                            "callback_data": "DoL Application Risk Assessment Draft  0 5.docx"
+                            "callback_data": "D Risk Assessment Draft  0 5.docx"
                         }
                         ],
                         [
@@ -308,7 +308,7 @@ bot.add('/', [
                         [
                         {
                             "text": "Microsoft Azure in the Enterprise_April_17_2014.pptx",
-                            "callback_data": "Microsoft Azure in the Enterprise_April_17_2014.pptx"
+                            "callback_data": "Me in the Enterprise_April_17_2014.pptx"
                         }
                         ],
                         [
@@ -320,7 +320,7 @@ bot.add('/', [
                         [
                         {
                             "text": "Findings - Win 8 Metro application development.doc",
-                            "callback_data": "Findings - Win 8 Metro application development.doc"
+                            "callback_data": "Fetro application development.doc"
                         }
                         ],
                         [
@@ -332,13 +332,13 @@ bot.add('/', [
                         [
                         {
                             "text": "Findings - Win 8 Metro application development.doc",
-                            "callback_data": "Findings - Win 8 Metro application development.doc"
+                            "callback_data": "Ftro application development.doc"
                         }
                         ],
                         [
                         {
                             "text": "Common Consent Dev Flow-Edward Wu-matwin8box.pptx",
-                            "callback_data": "Common Consent Dev Flow-Edward Wu-matwin8box.pptx"
+                            "callback_data": "Cev Flow-Edward Wu-matwin8box.pptx"
                         }
                         ],
                         [
@@ -392,13 +392,13 @@ bot.add('/', [
                         [
                         {
                             "text": "HTML 5 or Silverlight, making a rational choice.docx",
-                            "callback_data": "HTML 5 or Silverlight, making a rational choice.docx"
+                            "callback_data": "Hight, making a rational choice.docx"
                         }
                         ],
                         [
                         {
                             "text": "Provisioning Azure Service Bus for federated authentication-matwin8box.docx",
-                            "callback_data": "Provisioning Azure Service Bus for federated authentication-matwin8box.docx"
+                            "callback_data": "Pauthentication-matwin8box.docx"
                         }
                         ],
                         [
@@ -410,7 +410,7 @@ bot.add('/', [
                         [
                         {
                             "text": "Provisioning Azure Service Bus for federated authentication.docx",
-                            "callback_data": "Provisioning Azure Service Bus for federated authentication.docx"
+                            "callback_data": "Pice Bus for federated authentication.docx"
                         }
                         ],
                         [
