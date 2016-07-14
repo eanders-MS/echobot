@@ -127,7 +127,26 @@ bot.add('/', [
         else if (session.message.text.startsWith('dump message')) {
             session.send(`\`\`\`\n${JSON.stringify(session.message, null, '\t')}\`\`\``);
         }
-        else if (session.message.text.startsWith('send buttons')) {
+        else if (session.message.text.startsWith('send few buttons')) {
+            session.sendMessage({
+                method: "sendMessage",
+                parameters: {
+                    text: "Which file do you want?",
+                    parse_mode: "Markdown",
+                    reply_markup: JSON.stringify(
+                    {
+                    "inline_keyboard": [
+                        [
+                        {
+                            "text": "Provisioning Azure Service Bus for federated authentication.docx",
+                            "callback_data": "Provisioning Azure Service Bus for federated authentication.docx"
+                        }
+                        ]
+                    ]})
+                }
+            })
+        }
+        else if (session.message.text.startsWith('send lot buttons')) {
             session.sendMessage({
                 method: "sendMessage",
                 parameters: {
