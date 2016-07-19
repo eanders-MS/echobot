@@ -127,6 +127,9 @@ bot.add('/', [
         else if (session.message.text.startsWith('dump message')) {
             session.send(`\`\`\`\n${JSON.stringify(session.message, null, '\t')}\`\`\``);
         }
+        else if (session.message.text.startsWith('send ul')) {
+            session.send("Your team members are:\n\n* Member1\n* Member2\n* Member3\n\n");
+        }
         else if (session.message.text.startsWith('send few buttons')) {
             session.sendMessage({
                 method: "sendMessage",
